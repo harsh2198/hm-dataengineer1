@@ -320,7 +320,7 @@
 										"source": {
 											"type": "AzureSqlSource",
 											"sqlReaderQuery": {
-												"value": "@{concat('select * from', item().SchemaName,'.', item(). TableName)}",
+												"value": "@{concat('SELECT * FROM', item().SchemaName , '.', item().TableName)}",
 												"type": "Expression"
 											},
 											"queryTimeout": "02:00:00",
